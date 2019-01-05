@@ -3,12 +3,13 @@ MAINTAINER Mausy5043
 
 ENV TZ=Europe/Amsterdam
 
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
+ && echo $TZ > /etc/timezone
 
-RUN apt-get update -qq \
+RUN apt-get -qqy update   \
  && apt-get -qqy autoclean \
  && apt-get -qqy autoremove \
- && apt-get -qqyV upgrade \
+ && apt-get -qqyV upgrade    \
  && apt-get install -qqy wget \
                         gnupg2 \
                         locales \
