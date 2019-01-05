@@ -24,3 +24,7 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
 
 RUN date
 RUN locale
+
+EXPOSE 514/udp
+EXPOSE 601/tcp
+EXPOSE 6514/tcp
