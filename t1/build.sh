@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # build a local image
-docker build -t local .
+docker build -t mausy5043/t1:latest .
