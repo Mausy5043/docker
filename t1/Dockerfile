@@ -6,10 +6,10 @@ ENV TZ=Europe/Amsterdam
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update -qq \
- && apt-get -qy autoclean \
- && apt-get -qy autoremove \
- && apt-get -qyuV upgrade \
- && apt-get install -qy wget \
+ && apt-get -qqy autoclean \
+ && apt-get -qqy autoremove \
+ && apt-get -qqyV upgrade \
+ && apt-get install -qqy wget \
                         gnupg2 \
                         locales \
                         syslog-ng
