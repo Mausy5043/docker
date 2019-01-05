@@ -21,6 +21,3 @@ ENV LC_ALL en_US.UTF-8
 
 RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen \
  && locale-gen
-
-RUN date
-RUN locale
