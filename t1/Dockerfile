@@ -12,7 +12,7 @@ RUN apt-get -qqy update   \
  && apt-get -qqyV upgrade    \
  && apt-get install -qqy wget \
                         gnupg2 \
-                        locales \
+                        locales
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
