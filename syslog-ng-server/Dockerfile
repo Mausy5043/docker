@@ -29,3 +29,5 @@ RUN dirname $(find / -name "libjvm.so") > /etc/ld.so.conf.d/openjdk-libjvm.conf 
 EXPOSE 514/udp
 EXPOSE 601/tcp
 EXPOSE 6514/tcp
+
+ENTRYPOINT ["/usr/sbin/syslog-ng", "-F"]
