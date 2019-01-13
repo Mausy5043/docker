@@ -1,4 +1,4 @@
-FROM mariadb
+FROM mariadb:latest
 MAINTAINER Mausy5043
 
 ENV TZ=Europe/Amsterdam
